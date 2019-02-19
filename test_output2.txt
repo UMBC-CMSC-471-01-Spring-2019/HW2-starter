@@ -1,0 +1,31 @@
+(python3.7) hw2-finin> python3 wj2test.py -c 9 4 -s 0 0 -g 0 2
+Solving WJ2((9, 4),(0, 0),(0, 2))
+
+
+Reachable states: {(9, 1), (3, 0), (0, 2), (8, 0), (9, 4), (0, 3), (4, 0), (9, 0), (4, 4), (5, 0), (0, 4), (6, 4), (5, 4), (0, 0), (9, 3), (6, 0), (1, 4), (1, 0), (0, 1), (7, 0), (9, 2), (7, 4), (2, 0), (3, 4), (2, 4), (8, 4)}
+
+
+
+Search algorithm: breadth_first_tree_search
+Path of cost 30: (0, 0) --fill:1--> (9, 0) --pour:1-2--> (5, 4) --dump:2--> (5, 0) --pour:1-2--> (1, 4) --dump:2--> (1, 0) --pour:1-2--> (0, 1) --fill:1--> (9, 1) --pour:1-2--> (6, 4) --dump:2--> (6, 0) --pour:1-2--> (2, 4) --dump:2--> (2, 0) --pour:1-2--> (0, 2) 
+
+Search algorithm: breadth_first_graph_search
+Path of cost 30: (0, 0) --fill:1--> (9, 0) --pour:1-2--> (5, 4) --dump:2--> (5, 0) --pour:1-2--> (1, 4) --dump:2--> (1, 0) --pour:1-2--> (0, 1) --fill:1--> (9, 1) --pour:1-2--> (6, 4) --dump:2--> (6, 0) --pour:1-2--> (2, 4) --dump:2--> (2, 0) --pour:1-2--> (0, 2) 
+
+Search algorithm: depth_first_graph_search
+Path of cost 30: (0, 0) --fill:1--> (9, 0) --pour:1-2--> (5, 4) --dump:2--> (5, 0) --pour:1-2--> (1, 4) --dump:2--> (1, 0) --pour:1-2--> (0, 1) --fill:1--> (9, 1) --pour:1-2--> (6, 4) --dump:2--> (6, 0) --pour:1-2--> (2, 4) --dump:2--> (2, 0) --pour:1-2--> (0, 2) 
+
+Search algorithm: iterative_deepening_search
+Path of cost 30: (0, 0) --fill:1--> (9, 0) --pour:1-2--> (5, 4) --dump:2--> (5, 0) --pour:1-2--> (1, 4) --dump:2--> (1, 0) --pour:1-2--> (0, 1) --fill:1--> (9, 1) --pour:1-2--> (6, 4) --dump:2--> (6, 0) --pour:1-2--> (2, 4) --dump:2--> (2, 0) --pour:1-2--> (0, 2) 
+
+Search algorithm: astar_search
+Path of cost 30: (0, 0) --fill:1--> (9, 0) --pour:1-2--> (5, 4) --dump:2--> (5, 0) --pour:1-2--> (1, 4) --dump:2--> (1, 0) --pour:1-2--> (0, 1) --fill:1--> (9, 1) --pour:1-2--> (6, 4) --dump:2--> (6, 0) --pour:1-2--> (2, 4) --dump:2--> (2, 0) --pour:1-2--> (0, 2) 
+
+SUMMARY: successors/goal tests/states generated/solution
+
+breadth_first_tree_search    <324712/324713/939579/(0, >
+breadth_first_graph_search   <  24/  26/  90/(0, >      
+depth_first_graph_search     <  12/  13/  45/(0, >      
+iterative_deepening_search   <170370/495083/495083/(0, >
+astar_search                 <  27/  28/  95/(0, >      
+(python3.7) hw2-finin> 
